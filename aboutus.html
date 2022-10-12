@@ -1,8 +1,7 @@
 <DOCTYPE html>
     <html>
     <head>
-        <style>
-    
+        <style>    
     /* Navigation Bar */
     .navBar
     {
@@ -11,35 +10,33 @@
         max-height: 60px;  
     }
     
-    .navBar a
+    .navBar .button
     {
+        display: flex;
         transition-duration: 0.3s;
-        float: left;        
-        text-decoration: none;
-        text-align: center;        
-        font-size: 20px;
-        color: rgb(158, 40, 40);
+        float: left;                  
         padding: 16px 16px;
     }
+
+    .navBar a, .navBar p
+    {
+        text-decoration: none;
+        text-align: center;  
+        color: rgb(158, 40, 40);
+        font-size: 20px;    
+    }
     
-    .navBar a:hover
+    .navBar .button:hover
     {
         transition-duration: 0.5s;
         background-color:darkseagreen;
         padding: 18px 18px;
     }
 
-    .navBar img
+    .navBar .label
     {
         float: left;
-        position: absolute;
-        height: 60px;
-    }
-
-    #ABOUTUS
-    {
-        float: right;
-        font-weight: bold;
+        display: inline-flex;
     }
 
     /* Content */
@@ -48,22 +45,65 @@
         background-color: aliceblue;
     }
 
+    .content h1
+    {
+        text-decoration: none;
+        color: rgb(185, 0, 0);
+        text-align: center;
+        padding: 20px 20px;
+    }
+
+    .content h2
+    {
+        text-decoration: none;
+        background-color: rgb(50, 52, 53);
+        text-align: left;
+        padding: 5px;
+    }
+
+    .content p
+    {
+        text-decoration: none;
+        text-align: left;
+        margin: 2px;
+        padding-left: 15px;
+        padding-bottom: 8px;
+    }
+
     /* Footer */
     .foot
     {
-        background-color: darkgray;
+        background-color: rgb(31, 31, 31);
         position: absolute;
         width: 100%;
         bottom: 0;
+    }
+
+    .foot h1
+    {
+        text-decoration: none;
+        color: rgb(185, 0, 0);
+        padding-left: 10px;
+        
+    }
+
+    .foot li
+    {
+        text-align: left;
+        padding-left: 15px;
     }
     
         </style>
     </head>
     <body>
         <div class="navBar">
-            <a href="index.html">Home</a>
-            <img src="images/logo.jpg">
-            <a href="aboutus.html" class="live" id="ABOUTUS">ABOUT US</a>
+            <div class="button"><a href="index.html"><img src="images/home.png" height="30px"></a></div>            
+            <div class="label"><img src="images/logo.jpg" height="60px"></div>
+            <div class="button" style="float: right; font-weight: bold;"><img src="images/options.png" height="30px"></div>
+            <div class="button" style="float: right; font-weight: bold;"><img src="images/search.png" height="30px"></div>
+            <div class="button" style="float: right; font-weight: bold;"><img src="images/profile.png" height="30px"></div>
+            <div class="button" style="float: right; font-weight: bold;"><a href="aboutus.html">ABOUT US</a></div>
+            
         </div>
         <div class="content">
             <h1>ABOUT US</h1>
@@ -78,8 +118,10 @@
         </div>
         <div class="foot">
             <h1>Contributors</h1>
-            <p>Mayank Deepak Thakkar</p>
-            <p>Aarav Jain</p>
+            <ul>
+                <li>Mayank Deepak Thakkar (s3885003)</li>
+                <li>Aarav Jain (s3943906)</li>
+            </ul>
         </div>
     </body>
     </html>
