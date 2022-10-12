@@ -1,0 +1,9 @@
+body {background-color: aqua;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    }
+    h1 {color:black;
+        font-family:fantasy;
+        font-size: 300%;
+        text-align: center}
